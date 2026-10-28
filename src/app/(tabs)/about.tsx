@@ -31,7 +31,7 @@ const PURPLE = "#A78BFA";
 const MUTED = "#9892A8";
 
 // Your USDT receiving wallet address
-const USDT_WALLET_ADDRESS = "TPyWqipy8RCskF9WvWcs2PZUaJVi8R1He8";
+const USDT_WALLET_ADDRESS = "TLq9BEeSwvWDd8J4TpvvfHu36kAXVHqEjL";
 const USDT_NETWORK = "TRC20";
 
 function Feature({

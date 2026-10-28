@@ -22,6 +22,7 @@ import {
     View,
 } from "react-native";
 import { ID, TablesDB } from "react-native-appwrite";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { client } from "../../lib/appwrite";
 
 const db = new TablesDB(client);
@@ -167,9 +168,9 @@ export default function HomeScreen() {
   };
 
   return (
-    <View className="flex-1 bg-[#09090F]">
+    <SafeAreaView className="flex-1 bg-[#09090F]">
       {/* Header */}
-      <View className="flex-row items-center justify-between border-b border-white/[0.08] px-5 pb-4 pt-5">
+      <View className="flex-row items-center justify-between border-b border-white/[0.08] px-5 pb-4">
         <View className="mr-3 h-[46px] w-[46px] items-center justify-center overflow-hidden rounded-2xl bg-[#241C40]">
           <Image
             source={require("../../../assets/images/icon.png")}
@@ -510,6 +511,6 @@ export default function HomeScreen() {
           </View>
         </View>
       </Modal>
-    </View>
+    </SafeAreaView>
   );
 }
